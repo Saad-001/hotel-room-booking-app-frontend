@@ -6,6 +6,8 @@ const Featured = () => {
     "http://localhost:5000/hotels/countByCity?cities=Dhaka,chittagong,Cumilla"
   );
   console.log(data);
+  console.log(error);
+  console.log(refatch);
   return (
     <div className="featured">
       {loading ? (
