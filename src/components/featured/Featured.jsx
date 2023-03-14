@@ -5,9 +5,6 @@ const Featured = () => {
   const { data, loading, error, refatch } = useFetch(
     "http://localhost:5000/hotels/countByCity?cities=Dhaka,chittagong,Cumilla"
   );
-  console.log(data);
-  console.log(error);
-  console.log(refatch);
   return (
     <div className="featured">
       {loading ? (
@@ -44,7 +41,7 @@ const Featured = () => {
               className="featuredImg"
             />
             <div className="featuredTitles">
-              <h1>Comilla</h1>
+              <h1>Cumilla</h1>
               <h2>{data[2]} properties</h2>
             </div>
           </div>
